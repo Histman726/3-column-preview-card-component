@@ -30,13 +30,100 @@ body {
     width: 100vw;
 }
 
+.container {
+    height: 100%;
+    width: 100%;
+    padding: 10%;
+}
+
 .cards {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;
+    padding: 0.1px;
 }
 
 .card {
     padding: 25px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.card img {
+    margin-bottom: 1.5em;
+}
+
+.card h3 {
+    font-family: var(--shoulders);
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--very-light-gray);
+    margin-bottom: 0.83em;
+}
+
+.card p {
+    font-family: var(--lexend);
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--transparent-white);
+    margin-bottom: 7.5em;
+}
+
+.card button {
+    border-radius: 45px;
+    background-color: var(--very-light-gray);
+    padding: 15px 30px;
+    font-family: var(--lexend);
+    border: 2px solid var(--very-light-gray);
+}
+
+.card:nth-child(1) {
+    background-color: var(--bright-orange);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.card:nth-child(1) button {
+    color: var(--bright-orange);
+
+}
+
+.card:nth-child(1) button:hover {
+    background-color: var(--bright-orange);
+    color: #f2f2f2;
+}
+
+.card:nth-child(2) {
+    background-color: var(--dark-cyan);
+}
+
+.card:nth-child(2) button {
+    color: var(--dark-cyan);
+}
+
+.card:nth-child(2) button:hover {
+    background-color: var(--dark-cyan);
+    color: #f2f2f2;
+}
+
+.card:nth-child(3) {
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card:nth-child(3) button {
+    color: var(--very-dark-cyan);
+}
+
+.card:nth-child(3) button:hover {
+    background-color: var(--very-dark-cyan);
+    color: #f2f2f2;
+}
+
+@media (max-width:400px) {
+    .cards {
+        flex-direction: column;
+    }
 }
